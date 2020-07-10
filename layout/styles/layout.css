@@ -11,18 +11,11 @@ File: Layout CSS
 @import url("fontawesome-4.5.0.min.css");
 @import url("framework.css");
 
-/* Rows
---------------------------------------------------------------------------------------------------------------- */
-.row0, .row0 a{}
-.row1, .row1 a{}
-.row2, .row2 a{}
-.row3, .row3 a{}
-.row4, .row4 a{}
-.row5, .row5 a{}
 
 
-/* Top Bar
---------------------------------------------------------------------------------------------------------------- */
+
+/* Top Bar */
+
 #topbar{font-size:.8rem; text-transform:uppercase;}
 
 #topbar .fl_left{margin-top:8px;}
@@ -37,7 +30,6 @@ File: Layout CSS
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{}
 
 #header #logo{margin-top:15px;}
 #header #logo *{margin:0; padding:0; line-height:1;}
@@ -60,7 +52,7 @@ File: Layout CSS
 .container{padding:80px 0;}
 
 /* Content */
-.container .content{}
+/* .container .content{} */
 
 /* Comments */
 #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
@@ -83,7 +75,7 @@ File: Layout CSS
 }
 
 /* Sidebar */
-.container .sidebar{}
+/* .container .sidebar{} */
 
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
@@ -100,7 +92,7 @@ File: Layout CSS
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
 #footer .linklist li, #footer .linklist li::after{clear:both;}
 
-#footer .contact{}
+/* #footer .contact{} */
 #footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
 #footer .contact li *{margin:0; padding:0; line-height:1.6;}
 #footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
@@ -133,7 +125,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
-#mainav{}
+/* #mainav{} */
 #mainav ul{text-transform:uppercase;}
 #mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
@@ -314,24 +306,24 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
 
-	#topbar{}
+	/* #topbar{} */
 
 	#header{padding:15px 0;}
 	#header #logo{margin:0;}
+/* ################ HAD TO COMMENT OUT THE display:block IN ORDER TO GET THE MENU TO SHRINK WITH THE PAGE ############## */
+       /* #mainav{} */
+	/* #mainav ul{display:none;} */
+	/* #mainav form{display:block;} */
 
-	#mainav{}
-	#mainav ul{display:none;}
-	#mainav form{display:block;}
+	/* #breadcrumb{} */
 
-	#breadcrumb{}
-
-	.container{}
+	
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
-	#footer{}
+	
 
-	#copyright{}
+	
 	#copyright p:first-of-type{margin-bottom:10px;}
 }
 
